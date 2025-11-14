@@ -14,7 +14,7 @@ let gradientBtn = document.querySelector("#generategradientBtn");
 // --------------------------   FOR SOLID COLOR    -------------------------------
 btn.addEventListener("click", function () {
     console.log("Btn is clicked....");
-    let h3 = document.querySelector("#heading1");
+    let h3 = document.querySelector("h3");
     let randomColor = getRandomColor();
     h3.innerText = randomColor;
 
@@ -38,7 +38,7 @@ function getRandomColor() {
 
 gradientBtn.addEventListener("click", function () {
     console.log("Btn is clicked....");
-    let h3_2 = document.querySelector("heading");
+    let h3_2 = document.querySelector("h3");
     let gradientRandomColor = getGradientRandomColor();
     h3_2.innerText = gradientRandomColor;
     h3_2.classList.add("fontChanges");
